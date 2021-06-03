@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+    
+    <head>
+		<meta charset="UTF-8">
+		<!-- IE Compatibility modes -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>亂數擲骰子</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/smallgame.css" rel="stylesheet" type="text/css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script2.js"></script>
+        <strong></strong>
+	<style>
+	body{
+	background-color: #490A0B;
+//(顏色自己改)
+		    font-family:fantasy;
+		}	
+	</style>	
+
+	</head>
+    
+	<body>
+	
+	<nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">切換導航選單</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">UI/UX設計</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">我的首頁</a></li>
+                    <li><a href="shopping.html">資設購物</a></li>
+                    <li><a href="#">小小遊戲</a></li>
+                    <li><a href="myworks.html">我的作品</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	
+	<header>
+		<h1>擲骰子遊戲</h1>
+	</header>
+
+	
+	<hr/>
+	
+		<div class="container">
+		 <div class="row">
+		  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="bdisp">
+				<h2>甲玩家</h2>
+				<img id="dice1_1" src="images/dice6.gif">&nbsp;&nbsp;<image id="dice1_2" src="images/dice4.gif">&nbsp;&nbsp;<img id="dice1_3" src="images/dice3.gif">
+			</div>
+			
+			<div class="play">
+				<input onclick="dice(1)" type="button" value="擲出"> 
+			</div>
+			
+			<div class="disp">
+				<span>甲擲出</span><span><input id="d1" type="text" value=""></span>
+			</div>
+		  </div>
+		  
+		  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="bdisp">
+				<h2>乙玩家</h2>
+				<img id="dice2_1" src="images/dice6.gif"><image id="dice2_2" src="images/dice4.gif"><img id="dice2_3" src="images/dice3.gif">
+			</div>
+			
+			<div class="play">
+				<input onclick="dice(2)" type="button" value="擲出"> 
+			</div>
+			
+			<div class="disp">
+				<span>乙擲出</span><span><input id="d2" type="text" value=""></span>
+			</div>
+		  </div>
+		  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="win">
+		  <h2>誰贏?</h2>
+		  <p><input id="d3" type="text" value=""></p>
+		  </div>
+		 </div>
+		</div>
+	
+	<footer class="text-center">
+        Copyright © 2018 Department of Computer Simulation and Design All rights reserved
+    </footer>
+	</body>
+	
+</html>
+
+
+
+
